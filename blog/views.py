@@ -7,7 +7,7 @@ def home_page(request):
         user = request.POST.get("username")
 
         comment_obj = Comment.objects.create(
-        	Comment=comment,
+        	comment=comment,
         	user=user
         )
 
